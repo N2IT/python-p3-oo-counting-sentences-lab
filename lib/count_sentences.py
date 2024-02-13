@@ -27,7 +27,10 @@ class MyString:
         return True if self.value.endswith("!") else False
 
     def count_sentences(self):
-        pass
+        breakpoint()
+        for words in self.value:
+          print(len(words.endswith(".")))
+        
           
 
 
@@ -37,5 +40,7 @@ class MyString:
 # returns True if value ends with a question mark and False otherwise.
 # returns True if value ends with an exclamation mark and False otherwise.
 # returns the number of sentences in the value.
+  # does a word end with ., !, or ?? then it indicates the end of a sentence.
+  # count the words that end with any of these punctuations
 
         
